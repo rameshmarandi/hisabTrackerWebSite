@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Hisab Tracker – Smart Expense & Money Manager App</title>
+<meta name="description" content="Track expenses, income, loans, EMIs and savings with Hisab Tracker. A secure, powerful SaaS-grade money management platform with cinematic motion UI.">
+<meta name="keywords" content="expense tracker, money manager, hisab tracker, budget app, EMI tracker, finance app india">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root{
+ --bg:#0b0f0c;--card:#121815;--primary:#22c55e;--text:#ffffff;--muted:#a3a3a3;--border:rgba(255,255,255,.08)
+}
+body.light{--bg:#f6fff9;--card:#ffffff;--primary:#16a34a;--text:#0b0f0c;--muted:#4b5563;--border:rgba(0,0,0,.08)}
+*{margin:0;box-sizing:border-box}
+body{font-family:system-ui;background:var(--bg);color:var(--text);overflow-x:hidden}
+.container{max-width:1250px;margin:auto;padding:0 20px}
+
+header{position:fixed;top:0;width:100%;background:rgba(0,0,0,.5);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);z-index:1000}
+nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+.menu a{margin-left:22px;color:var(--muted);font-weight:500}
+.menu a:hover{color:var(--primary)}
+.toggle{border:1px solid var(--border);padding:6px 10px;border-radius:6px;cursor:pointer}
+
+.bg-layer{position:fixed;inset:0;background:
+radial-gradient(circle at 20% 30%,rgba(34,197,94,.18),transparent 40%),
+radial-gradient(circle at 80% 70%,rgba(34,197,94,.12),transparent 45%),
+radial-gradient(circle at 50% 50%,rgba(34,197,94,.08),transparent 50%);
+animation:drift 35s ease-in-out infinite alternate;z-index:-1}
+@keyframes drift{from{transform:translate(0,0)}to{transform:translate(-50px,-40px)}}
+
+.hero{min-height:100vh;display:flex;align-items:center;text-align:center}
+.hero h1{font-size:clamp(2.8rem,5vw,4.5rem);font-weight:900}
+.hero p{max-width:760px;margin:22px auto;color:var(--muted);font-size:1.1rem}
+.btn{padding:14px 30px;border-radius:12px;font-weight:600;display:inline-block;margin:10px;transition:.3s}
+.primary{background:var(--primary);color:#000;box-shadow:0 0 45px rgba(34,197,94,.45)}
+.outline{border:1px solid var(--border)}
+.btn:hover{transform:translateY(-4px) scale(1.05)}
+
+section{padding:130px 0}
+h2{text-align:center;font-size:2.6rem}
+.sub{text-align:center;margin:15px 0 55px;color:var(--muted)}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:30px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:28px;transition:.4s}
+.card:hover{border-color:var(--primary);transform:translateY(-12px)}
+
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:30px;text-align:center}
+.stat h3{font-size:2.7rem;color:var(--primary)}
+
+.slider{overflow:hidden;position:relative}
+.slides{display:flex;transition:transform 1s}
+.testimonial{min-width:100%;background:var(--card);padding:35px;border-radius:22px;text-align:center;font-size:1.05rem}
+
+.screens img{width:100%;border-radius:22px;transition:.4s;box-shadow:0 20px 40px rgba(0,0,0,.25)}
+.screens img:hover{transform:scale(1.08) rotate(1deg)}
+
+footer{text-align:center;padding:60px;border-top:1px solid var(--border);color:var(--muted)}
+html{scroll-behavior:smooth}
+
+@media(max-width:768px){
+  .menu{display:none;position:absolute;top:72px;right:20px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:15px;flex-direction:column}
+  .menu.show{display:flex}
+  .menu a{margin:10px 0}
+  .hamburger{display:block;cursor:pointer;font-size:22px}
+}
+
+@media(min-width:769px){.hamburger{display:none}}
+</style>
+</head>
+<body>
+
+<div class="bg-layer"></div>
+
+<header>
+  <div class="container">
+    <nav>
+      <strong>Hisab Tracker</strong>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <div class="menu" id="menu">
+        <a href="#why">Why</a>
+        <a href="#features">Features</a>
+        <a href="#stats">Stats</a>
+        <a href="#screens">Screens</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#download">Download</a>
+      </div>
+      <div class="toggle" onclick="document.body.classList.toggle('light')">🌙/☀️</div>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>Full Control Over Your Money</h1>
+    <p>Hisab Tracker is not just an expense app. It is a complete financial control system to track income, expenses, EMIs, loans, savings, dues and business hisab with clarity and speed.</p>
+    <a class="btn primary" href="#download">Download App</a>
+    <a class="btn outline" href="#features">Explore Power</a>
+  </div>
+</section>
+
+<section id="showcase">
+  <div class="container">
+    <h2>What Makes Hisab Tracker Different</h2>
+    <p class="sub">Not just an expense app. A complete financial control system.</p>
+    <div class="grid">
+      <div class="card"><strong>Total Money Control</strong><br/>Track cash, bank, UPI, wallets, loans, EMIs and savings in one unified dashboard.</div>
+      <div class="card"><strong>Indian Financial Reality</strong><br/>Designed for daily cash, UPI, rent, school fees, chit funds, and informal loans.</div>
+      <div class="card"><strong>Digital Khata + Expense Manager</strong><br/>Know who owes you, whom you owe, due dates, and settlement history.</div>
+      <div class="card"><strong>Offline First & Secure</strong><br/>Works without internet, encrypted storage, optional cloud sync, full privacy.</div>
+      <div class="card"><strong>Smart Alerts & Insights</strong><br/>EMI reminders, overspend alerts, saving goals, financial health view.</div>
+      <div class="card"><strong>Personal + Business Mode</strong><br/>Separate personal money and business hisab with reports and exports.</div>
+    </div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="container">
+    <h2>Why Hisab Tracker</h2>
+    <p class="sub">Built for people who want total visibility and control over their money</p>
+    <div class="grid">
+      <div class="card">⚡ Lightning fast one-tap expense & income entry</div>
+      <div class="card">📊 Unified view of Cash, Bank, UPI, Wallets & Loans</div>
+      <div class="card">⏰ Smart EMI, bill & due reminders</div>
+      <div class="card">📈 Visual analytics that show where your money leaks</div>
+      <div class="card">🔐 Bank-level encryption and privacy-first design</div>
+      <div class="card">☁️ Offline-first with secure cloud sync</div>
+    </div>
+  </div>
+</section>
+
+<section id="features">
+  <div class="container">
+    <h2>Powerful Features</h2>
+    <p class="sub">Everything required for personal and business hisab in one platform</p>
+    <div class="grid">
+      <div class="card">Daily Expense & Income Tracking</div>
+      <div class="card">Loan, EMI & Dues Management</div>
+      <div class="card">Category-wise & Monthly Reports</div>
+      <div class="card">Budget Planning & Overspend Alerts</div>
+      <div class="card">Party-wise Ledger & Hisab</div>
+      <div class="card">Secure Cloud Backup & Restore</div>
+      <div class="card">App Lock with PIN & Biometric</div>
+      <div class="card">Export PDF & Excel Statements</div>
+    </div>
+  </div>
+</section>
+
+<section id="stats">
+  <div class="container">
+    <h2>Growing With Trust</h2>
+    <p class="sub">Real users, real financial control</p>
+    <div class="stats">
+      <div class="stat"><h3 data-count="50000">0</h3><p>Active Users</p></div>
+      <div class="stat"><h3 data-count="1000000">0</h3><p>Transactions</p></div>
+      <div class="stat"><h3 data-count="4.8">0</h3><p>Play Store Rating</p></div>
+      <div class="stat"><h3 data-count="99">0</h3><p>Data Security</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="screens" class="screens">
+  <div class="container">
+    <h2>App Experience</h2>
+    <p class="sub">Clean, fast and powerful interface</p>
+    <div class="grid">
+      <img src="https://via.placeholder.com/400x800?text=Dashboard">
+      <img src="https://via.placeholder.com/400x800?text=Expense+Entry">
+      <img src="https://via.placeholder.com/400x800?text=Reports">
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="container">
+    <h2>User Stories</h2>
+    <p class="sub">Voices from the community</p>
+    <div class="slider">
+      <div class="slides" id="slides">
+        <div class="testimonial">"Finally full control over my monthly hisab."</div>
+        <div class="testimonial">"Best app for EMI and loan tracking in India."</div>
+        <div class="testimonial">"Simple, fast and very secure."</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="download">
+  <div class="container" style="text-align:center">
+    <h2>Download Hisab Tracker</h2>
+    <p class="sub">Take charge of your money from today</p>
+    <a class="btn primary" href="#">Google Play</a>
+    <a class="btn outline" href="#">App Store</a>
+  </div>
+</section>
+
+<footer>
+  © <span id="year"></span> Hisab Tracker. All rights reserved.
+</footer>
+
+<script>
+// Dynamic Year
+document.getElementById('year').textContent=new Date().getFullYear();
+
+// Animated Counters
+const counters=document.querySelectorAll('[data-count]');
+counters.forEach(counter=>{
+ let update=()=>{
+  let target=+counter.getAttribute('data-count');
+  let current=+counter.innerText;
+  let inc=target/100;
+  if(current<target){counter.innerText=Math.ceil(current+inc);setTimeout(update,20)}
+  else{counter.innerText=target}
+ };
+ update();
+});
+
+// Testimonial Slider
+let index=0;
+setInterval(()=>{
+ const slides=document.getElementById('slides');
+ index=(index+1)%3;
+ slides.style.transform=`translateX(-${index*100}%)`;
+},4000);
+
+function toggleMenu(){document.getElementById('menu').classList.toggle('show');}
+</script>
+
+</body>
+</html>
