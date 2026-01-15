@@ -734,7 +734,14 @@ body.light-theme .stats-header p {
   .header-actions {
     gap: 10px;
   }
+   .cta-button {
+    display: none;
+  }
 }
+
+/* Hide Download Free button on mobile */
+
+
 
 /* Footer adjustments */
 @media (max-width: 768px) {
