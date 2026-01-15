@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hisab Tracker - Your Personal Finance Command Center</title>
+    <meta
+      name="description"
+      content="Track all your money offline first. Hisab Tracker works without internet, no sign-up required to start, with smart sync across devices when you're ready."
+    />
+    <meta
+      name="keywords"
+      content="expense tracker, money manager, hisab tracker, budget app, finance app india, personal finance, offline expense tracker"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Shared Styles -->
+    <link rel="stylesheet" href="../styles/shared.css" />
+    <!-- Home Page Specific Styles -->
+    <link rel="stylesheet" href="../styles/home.css" />
+    <link rel="stylesheet" href="../styles/about.css" />
+    <link rel="stylesheet" href="../styles/contact.css" />
+  </head>
+
+  <body>
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+    <div class="floating-elements"></div>
+
+    <!-- Header -->
+    <header id="header">
+      <div class="container">
+        <div class="header-container">
+          <a href="../index.html" class="logo">
+            <div class="logo-icon">
+              <img
+                src="https://res.cloudinary.com/dvhjtth5f/image/upload/v1763839566/hisabTrackerOnlyImage_eyqbuq.png"
+                alt="Hisab Tracker Logo"
+                class="app-logo"
+              />
+            </div>
+            <span>Hisab Tracker</span>
+          </a>
+
+          <nav class="nav-menu" id="navMenu">
+            <a href="../index.html" class="nav-link">Home</a>
+            <a href="#core-features" class="nav-link">Features</a>
+
+            <a href="./about.html" class="nav-link">About</a>
+            <a href="pages/contact.html" class="nav-link active">Contact</a>
+          </nav>
+
+          <div class="header-actions">
+            <button class="theme-toggle" id="themeToggle">
+              <i class="fas fa-moon"></i>
+            </button>
+            <a href="#download" class="cta-button">Download Free</a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact-hero">
+      <div class="container">
+        <div class="contact-box">
+          <h1>Contact Hisab Tracker</h1>
+          <p>
+            Have questions, feedback, or partnership ideas? We would love to
+            hear from you.
+          </p>
+
+          <form
+            action="https://formspree.io/f/xwvvpvrb"
+            method="POST"
+            class="contact-form"
+          >
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Full Name" required />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="email"
+                name="email"
+                placeholder="Email Address"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <input type="text" name="subject" placeholder="Subject" />
+            </div>
+
+            <div class="form-group">
+              <textarea
+                name="message"
+                rows="5"
+                placeholder="Write your message..."
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+
+          <div class="contact-info">
+            <div>
+              <i class="fas fa-envelope"></i> helphisabtracker@gmail.com
+            </div>
+            <div><i class="fas fa-map-marker-alt"></i> India</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <div class="footer-logo">
+              <i class="fas fa-calculator"></i> Hisab Tracker
+            </div>
+            <p class="footer-desc">
+              India's most powerful offline-first personal finance app. Track
+              money without internet, manage multiple ledgers, and achieve
+              financial freedom.
+            </p>
+            <div class="footer-contact">
+              <p><i class="fas fa-envelope"></i> helphisabtracker@gmail.com</p>
+              <!-- <p><i class="fas fa-phone"></i> +91-XXXXXXXXXX</p> -->
+            </div>
+            <!-- <div class="social-links">
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </div> -->
+          </div>
+
+          <div class="footer-column">
+            <h3>Features</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="#core-features"
+                  ><i class="fas fa-chevron-right"></i> Offline Tracking</a
+                >
+              </li>
+              <li>
+                <a href="#core-features"
+                  ><i class="fas fa-chevron-right"></i> Multiple Books</a
+                >
+              </li>
+              <li>
+                <a href="#advanced-features"
+                  ><i class="fas fa-chevron-right"></i> Budget & Goals</a
+                >
+              </li>
+              <li>
+                <a href="#advanced-features"
+                  ><i class="fas fa-chevron-right"></i> Smart Reminders</a
+                >
+              </li>
+              <li>
+                <a href="#core-features"
+                  ><i class="fas fa-chevron-right"></i> Multi-Language</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- <div class="footer-column">
+            <h3>Resources</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="#"><i class="fas fa-chevron-right"></i> User Guide</a>
+              </li>
+              <li>
+                <a href="#faq"
+                  ><i class="fas fa-chevron-right"></i> FAQ</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-chevron-right"></i> Video Tutorials</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-chevron-right"></i> Blog</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-chevron-right"></i> Community</a>
+              </li>
+            </ul>
+          </div> -->
+
+          <div class="footer-column">
+            <h3>Legal</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="./policy.html"
+                  ><i class="fas fa-chevron-right"></i> Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href="./term.html"
+                  ><i class="fas fa-chevron-right"></i> Terms of Service</a
+                >
+              </li>
+              <li>
+                <a href="./security.html"
+                  ><i class="fas fa-chevron-right"></i> Data Security</a
+                >
+              </li>
+              <li>
+                <a href="./refund.html"
+                  ><i class="fas fa-chevron-right"></i> Refund Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; <span id="currentYear"></span> Hisab Tracker. All rights
+            reserved. Made with ❤️ for India
+          </p>
+          <p class="footer-note">
+            <i class="fas fa-info-circle"></i> Hisab Tracker is designed for
+            personal finance tracking. For professional accounting, consult a
+            certified accountant.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <script>
+      // Initialize AOS
+      AOS.init({
+        duration: 1000,
+        once: true,
+        offset: 100,
+      });
+
+      // Initialize Particles.js
+      particlesJS("particles-js", {
+        particles: {
+          number: { value: 80, density: { enable: true, value_area: 800 } },
+          color: { value: "#00ff88" },
+          shape: { type: "circle" },
+          opacity: { value: 0.3, random: true },
+          size: { value: 3, random: true },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#00ff88",
+            opacity: 0.2,
+            width: 1,
+          },
+          move: {
+            enable: true,
+            speed: 2,
+            direction: "none",
+            random: true,
+            straight: false,
+            out_mode: "out",
+            bounce: false,
+          },
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: { enable: true, mode: "repulse" },
+            onclick: { enable: true, mode: "push" },
+          },
+        },
+        retina_detect: true,
+      });
+
+      // DOM Elements
+      const themeToggle = document.getElementById("themeToggle");
+      const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+      const navMenu = document.getElementById("navMenu");
+      const header = document.getElementById("header");
+      const currentYear = document.getElementById("currentYear");
+      const categoryBtns = document.querySelectorAll(".category-btn");
+      const featureCards = document.querySelectorAll(".feature-card");
+      const statNumbers = document.querySelectorAll(".stat-number");
+      const languageSelect = document.getElementById("languageSelect");
+
+      // Set current year
+      currentYear.textContent = new Date().getFullYear();
+
+      // Theme toggle
+      themeToggle.addEventListener("click", () => {
+        document.body.classList.toggle("light-theme");
+        const icon = themeToggle.querySelector("i");
+        if (document.body.classList.contains("light-theme")) {
+          icon.classList.remove("fa-moon");
+          icon.classList.add("fa-sun");
+        } else {
+          icon.classList.remove("fa-sun");
+          icon.classList.add("fa-moon");
+        }
+      });
+
+      // Mobile menu toggle
+      mobileMenuBtn.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+        const icon = mobileMenuBtn.querySelector("i");
+        if (navMenu.classList.contains("active")) {
+          icon.classList.remove("fa-bars");
+          icon.classList.add("fa-times");
+        } else {
+          icon.classList.remove("fa-times");
+          icon.classList.add("fa-bars");
+        }
+      });
+
+      // Header scroll effect
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+
+      // Feature category filtering
+      categoryBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          // Remove active class from all buttons
+          categoryBtns.forEach((b) => b.classList.remove("active"));
+          // Add active class to clicked button
+          btn.classList.add("active");
+
+          const category = btn.getAttribute("data-category");
+
+          // Show/hide feature cards based on category
+          featureCards.forEach((card) => {
+            if (
+              category === "all" ||
+              card.getAttribute("data-category") === category
+            ) {
+              card.style.display = "block";
+              // Trigger animation
+              card.style.animation = "none";
+              setTimeout(() => {
+                card.style.animation = "";
+              }, 10);
+            } else {
+              card.style.display = "none";
+            }
+          });
+        });
+      });
+
+      // Animated counters
+      function animateCounters() {
+        statNumbers.forEach((stat) => {
+          const target = parseFloat(stat.getAttribute("data-count"));
+          const suffix = stat.textContent.includes(".") ? 1 : 0;
+          const increment = target / 100;
+          let current = 0;
+
+          const updateCounter = () => {
+            if (current < target) {
+              current += increment;
+              stat.textContent = suffix
+                ? current.toFixed(1)
+                : Math.ceil(current);
+              setTimeout(updateCounter, 20);
+            } else {
+              stat.textContent = suffix ? target.toFixed(1) : target;
+            }
+          };
+
+          updateCounter();
+        });
+      }
+
+      // Trigger counter animation when stats section is in view
+      const observerOptions = {
+        threshold: 0.5,
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            animateCounters();
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      observer.observe(document.getElementById("stats"));
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute("href");
+          if (targetId === "#") return;
+
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 80,
+              behavior: "smooth",
+            });
+
+            // Close mobile menu if open
+            if (navMenu.classList.contains("active")) {
+              navMenu.classList.remove("active");
+              mobileMenuBtn.querySelector("i").classList.remove("fa-times");
+              mobileMenuBtn.querySelector("i").classList.add("fa-bars");
+            }
+          }
+        });
+      });
+
+      // Add floating elements dynamically
+      const floatingElementsContainer =
+        document.querySelector(".floating-elements");
+      for (let i = 0; i < 5; i++) {
+        const element = document.createElement("div");
+        element.className = "floating-element";
+        element.style.width = `${100 + Math.random() * 300}px`;
+        element.style.height = element.style.width;
+        element.style.left = `${Math.random() * 100}%`;
+        element.style.top = `${Math.random() * 100}%`;
+        element.style.background =
+          i % 2 === 0 ? "var(--primary-dark)" : "var(--secondary-dark)";
+        element.style.animationDelay = `${Math.random() * 15}s`;
+        floatingElementsContainer.appendChild(element);
+      }
+    </script>
+  </body>
+</html>

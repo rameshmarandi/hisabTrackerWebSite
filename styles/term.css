@@ -1,0 +1,74 @@
+/* ========================================= */
+/* TERMS OF SERVICE PAGE STYLES */
+/* ========================================= */
+
+.terms-page {
+  min-height: 100vh;
+  padding: 160px 20px 80px;
+  position: relative;
+  z-index: 3;
+}
+
+.terms-card {
+  max-width: 900px;
+  margin: 0 auto;
+  background: rgba(15, 15, 15, 0.92);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 50px;
+  box-shadow: 0 40px 120px rgba(0,0,0,0.4);
+}
+
+body.light-theme .terms-card {
+  background: rgba(255,255,255,0.95);
+}
+
+.terms-card h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.terms-updated {
+  text-align: center;
+  opacity: 0.6;
+  margin-bottom: 40px;
+  font-size: 0.95rem;
+}
+
+.terms-card h2 {
+  margin-top: 35px;
+  font-size: 1.35rem;
+  color: var(--primary-dark);
+}
+
+body.light-theme .terms-card h2 {
+  color: var(--primary-light);
+}
+
+.terms-card p,
+.terms-card li {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--muted-dark);
+}
+
+body.light-theme .terms-card p,
+body.light-theme .terms-card li {
+  color: var(--muted-light);
+}
+
+.terms-card ul {
+  padding-left: 22px;
+}
+
+@media (max-width: 768px) {
+  .terms-card {
+    padding: 30px 22px;
+  }
+
+  .terms-card h1 {
+    font-size: 2.2rem;
+  }
+}
