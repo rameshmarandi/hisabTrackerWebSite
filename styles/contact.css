@@ -4,7 +4,9 @@
   align-items: center;
   padding: 120px 0 60px;
 }
-
+.footer-content{
+  padding-top:10px
+}
 .contact-box {
   max-width: 600px;
   margin: auto;
