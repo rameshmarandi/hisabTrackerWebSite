@@ -1,0 +1,16 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.hisabtracker",
+      "sha256_cert_fingerprints": [
+       "AC:81:EA:81:E4:D9:7B:E7:AE:2E:84:A6:01:44:2B:6E:5A:CA:CF:75:F2:63:58:9B:87:59:61:F0:B1:73:09:87",
+       "3E:3F:4E:AA:56:3D:1A:E5:3E:20:6D:B7:84:21:2F:2C:94:1E:3D:F9:0A:63:69:35:3B:04:39:2C:60:56:6D:0A",
+       "49:25:0E:C0:D5:C6:30:F4:C6:3B:6C:86:0B:02:0F:BD:0A:35:E0:11:56:1B:DE:A8:EE:2D:33:D1:17:A4:34:18"
+    ]
+    }
+  }
+]
