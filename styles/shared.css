@@ -69,7 +69,7 @@ h6 {
 }
 
 .container {
-  width: 100%;
+  width: 80%;
   max-width: 1300px;
   margin: 0 auto;
   padding: 0 20px;
@@ -214,7 +214,7 @@ body.light-theme .logo {
 .logo-icon {
   width: 45px;
   height: 45px;
-  background: var(--gradient-dark);
+  /* background: var(--gradient-dark); */
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -223,9 +223,9 @@ body.light-theme .logo {
   color: white;
 }
 
-body.light-theme .logo-icon {
+/* body.light-theme .logo-icon {
   background: var(--gradient-light);
-}
+} */
 
 .nav-menu {
   display: flex;
@@ -1075,7 +1075,7 @@ body.light-theme .footer-bottom {
   width: 52px;
   height: 52px;
   border-radius: 12px;
-  background: linear-gradient(135deg, #00ff88, #00d4ff);
+  /* background: linear-gradient(135deg, #00ff88, #00d4ff); */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1106,7 +1106,7 @@ body.light-theme .footer-bottom {
   width: 42px;
   height: 42px;
   border-radius: 10px;
-  background: linear-gradient(135deg, #00ff88, #00d4ff);
+  /* background: linear-gradient(135deg, #00ff88, #00d4ff); */
   display: flex;
   align-items: center;
   justify-content: center;
