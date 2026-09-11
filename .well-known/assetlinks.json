@@ -5,11 +5,11 @@
     ],
     "target": {
       "namespace": "android_app",
-      "package_name": "com.hisabtracker",
+      "package_name": "com.hisabtrackers",
       "sha256_cert_fingerprints": [
-       "AC:81:EA:81:E4:D9:7B:E7:AE:2E:84:A6:01:44:2B:6E:5A:CA:CF:75:F2:63:58:9B:87:59:61:F0:B1:73:09:87",
-       "3E:3F:4E:AA:56:3D:1A:E5:3E:20:6D:B7:84:21:2F:2C:94:1E:3D:F9:0A:63:69:35:3B:04:39:2C:60:56:6D:0A",
-       "49:25:0E:C0:D5:C6:30:F4:C6:3B:6C:86:0B:02:0F:BD:0A:35:E0:11:56:1B:DE:A8:EE:2D:33:D1:17:A4:34:18"
+    "FA:C6:17:45:DC:09:03:78:6F:B9:ED:E6:2A:96:2B:39:9F:73:48:F0:BB:6F:89:9B:83:32:66:75:91:03:3B:9C",
+    "C6:94:73:7C:BA:1E:2C:5B:D4:BA:66:D0:05:66:43:BB:17:31:4E:B3:1A:8A:6A:7B:D3:80:A5:E6:65:99:B3:AB"
+
     ]
     }
   }
